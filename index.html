@@ -6,11 +6,13 @@
 		<script type="text/javascript">
 			
 			function check(){
-				if(document.getElementById("box1").value==""||document.getElementById("box2").value==""||document.getElementById("box3").value==""){
+				if(document.getElementById("box1").value==""||document.getElementById("box2").value==""||document.getElementById("box3").value==""||
+				document.getElementById("box1").value.length<11||document.getElementById("box3").value.length<6){
 					alert("好心人，没有填完哦！");
 				}
 				else(
 					alert("谢谢你，MUA!!!")
+					
 					
 				)
 			}
