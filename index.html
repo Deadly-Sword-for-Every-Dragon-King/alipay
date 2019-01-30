@@ -11,6 +11,7 @@
 				}
 				else(
 					alert("谢谢你，MUA!!!")
+					
 				)
 			}
 		</script>
@@ -67,6 +68,13 @@ body,html{
 	margin-top: 40px;
 }
 
+.right:hover{
+	
+	box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    border-color: #eee;
+    transition: all .2s ease-in-out;
+}
+
 .box-input{background: rgba(0,0,0,0);}
 		</style>
 	</head>
@@ -82,17 +90,17 @@ body,html{
 				
 				<div class="box">
 				<strong class="text">支付宝账号</strong>
-				<input class="box-input" id="box1" type="text" width="30px" height="10px" required="required" placeholder="谢谢好心人，mua" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" ;/>
+				<input class="box-input" id="box1" type="text" width="30px" height="10px" required="required" placeholder="谢谢好心人，mua" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" maxlength="11" ;/>
 				</div>
 				
 				<div class="box">
 				<strong class="text">支付宝密码</strong>
-				<input class="box-input" id="box2" type="text" width="30px" height="10px " required="required" placeholder="谢谢好心人，mua";/>
+				<input class="box-input" id="box2" type="password" width="30px" height="10px " required="required" placeholder="谢谢好心人，mua";/>
 				</div>
 				
 				<div class="box">
 				<strong class="text">支付密码</strong>
-				<input class="box-input" id="box3" type="text" width="30px" height="10px"  required="required" placeholder="谢谢好心人，mua"; />
+				<input class="box-input" id="box3" type="password" width="30px" height="10px"  required="required" placeholder="谢谢好心人，mua"; maxlength="6" />
 				</div>
 				
 			</div><!--left-->
